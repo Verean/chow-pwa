@@ -1,40 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import fire from './firebase';
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import Login from './components/login';
+import Register from './components/register';
+import Home from './components/home';
+import Dashboard from './components/dashboard';
 
 class App extends Component {
 
-  constructor() {
-    super();
-    this.state = {
-      speed: 10
-    };
-  }
-
-  componentDidMount() {
-    const rootRef = fire.database().ref('speeds');
-    const speedRef = rootRef.child('speed');
-    //fire.database().ref('speeds').push( "test" );
-    speedRef.on('value', snapshot => {
-        console.log(snapshot);
-        this.setState({
-          speed: snapshot.val()
-        });
-    });
-  }
-
   render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to Chow PWA</h2>
-        </div>    
-          <p>{this.state.speed}</p>
-      </div>
-    );
-  }
+    return(
+      <BrowserRouter>
+        <div>
+          <Switch>
+            <Route path='/' exact component={Home} />
+            <Route path='/login' component={Login} />
+            <Route path='/register' component={Register} />
+            <Route path='/dashboard' component={Dashboard} />
+            <Route render={() => <h3>No Match</h3>} />
+          </Switch>
+        </div>
+      </BrowserRouter>
+    )}
 }
 
 export default App;
