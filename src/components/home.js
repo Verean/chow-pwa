@@ -7,6 +7,7 @@ import RestoreIcon from 'material-ui-icons/Restore';
 import FavoriteIcon from 'material-ui-icons/Favorite';
 import LocationOnIcon from 'material-ui-icons/LocationOn';
 import FolderIcon from 'material-ui-icons/Folder';
+import { LinearProgress } from 'material-ui/Progress';
 
 const styles = {
   root: {
@@ -14,7 +15,7 @@ const styles = {
     width: '100%',
     bottom: 0,
     //zIndex: 1000
-    background: '#9E9E9E'
+    //background: '#9E9E9E'
   }
 };
 
@@ -34,7 +35,8 @@ class Home extends Component {
     return (
       <div>
         <Navbar />
-        Home. Not Protected. Anyone can see this.
+        
+        Home. Not Protected. Anyone can see this.<LinearProgress />
         <BottomNavigation value={this.state.value} onChange={this.handleChange} className={this.props.classes.root}>
         <BottomNavigationButton label="Recents" value="recents" icon={<RestoreIcon />} />
         <BottomNavigationButton label="Favorites" value="favorites" icon={<FavoriteIcon />} />
