@@ -1,5 +1,5 @@
 ## ReactJS
 
-## Google Firebase 
+## Firebase 
 
 ## Material-UI
