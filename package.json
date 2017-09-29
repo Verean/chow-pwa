@@ -1,20 +1,24 @@
 {
-  "name": "chow-app",
+  "name": "pwa-chow",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "firebase": "^4.3.1",
-    "material-ui": "^1.0.0-beta.10",
+    "firebase": "^4.4.0",
+    "material-ui": "^1.0.0-beta.11",
     "material-ui-icons": "^1.0.0-beta.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-google-maps": "^8.3.1",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.13"
+    "react-scripts": "1.0.13",
+    "source-map-explorer": "^1.5.0"
   },
   "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "devDependencies": {}
 }
