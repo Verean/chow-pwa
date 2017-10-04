@@ -60,7 +60,7 @@ class SettingOptions extends Component {
                 </Grid>
                 <Grid item xs={12}>
                     <Grid container spacing={0} justify={'center'}>
-                        tETST
+                        Input text
                     </Grid>
                 </Grid>
                 <Grid item xs={12}>
@@ -74,59 +74,6 @@ class SettingOptions extends Component {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid className={this.props.classes.top} container spacing={0}>		
-                <Grid className={this.props.classes.container} item xs={10}>
-                <Grid className={this.props.classes.container} item xs={10}>
-                <TextField
-                            id="email"
-                            label="First Name"
-                            value='Verean'
-                            className={this.props.classes.textField}
-                            margin="normal"
-                            fullWidth
-                        />
-                </Grid>
-                <Grid  item xs={2}>
-                <Button className={this.props.classes.buttons}>Change</Button>
-                </Grid>
-                    <form className={this.props.classes.form} noValidate autoComplete="off" onSubmit={this.props.submit}>
-                        <Typography type="caption">OR</Typography>
-                        <TextField
-                            id="email"
-                            label="First Name"
-                            value='Verean'
-                            className={this.props.classes.textField}
-                            margin="normal"
-                            fullWidth
-                        />
-                        <TextField
-                            id="password"
-                            label="Last Name"
-                            value='Patel'
-                            className={this.props.classes.textField}
-                            margin="normal"
-                            fullWidth
-                        />
-                        <TextField
-                            id="password"
-                            label="Phone Number"
-                            value='(---) ---_----'
-                            className={this.props.classes.textField}
-                            margin="normal"
-                            fullWidth
-                        />
-						<Typography className={this.props.classes.errorMsg} type="caption">{this.props.msg}</Typography>
-                        test
-                    </form>
-                </Grid>
-                <Grid className={this.props.classes.container} item xs={5}>
-                    test
-                </Grid>
-                <Grid className={this.props.classes.container} item xs={5}>
-                    test
-                </Grid>
-            </Grid>
-      </div>
     )
   }
 }
