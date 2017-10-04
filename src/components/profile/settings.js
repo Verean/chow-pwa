@@ -65,12 +65,12 @@ class SettingOptions extends Component {
                 </Grid>
                 <Grid item xs={12}>
                     <Grid container spacing={0} justify={'center'}>
-                        tETST
+                        Input text
                     </Grid>
                 </Grid>
                 <Grid item xs={12}>
                     <Grid container spacing={0} justify={'center'}>
-                        tETST
+                        Input text
                     </Grid>
                 </Grid>
             </Grid>
