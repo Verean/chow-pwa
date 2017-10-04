@@ -76,17 +76,6 @@ class Profile extends Component {
   render () {
     return (
         <div className={this.props.classes.root}>
-            {/* <AppBar position="static" color="primary" className={this.props.classes.midBar}>
-                <Toolbar>
-                <IconButton className={this.props.classes.menuButton} color="contrast" aria-label="Menu">
-                    <MenuIcon />
-                </IconButton>
-                <Typography type="title" color="inherit" className={this.props.classes.flex}>
-                    Profile
-                </Typography>
-                <Button color="accent" raised >Logout</Button>
-                </Toolbar>
-            </AppBar> */}
 
             <Grid container spacing={0} style={{background: '#EF9A9A'}}>
                 <Grid item xs={12} className={this.props.classes.container}>
