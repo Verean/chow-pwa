@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import Login from './components/login/login';
-import Register from './components/register';
 import Home from './components/home';
 import Dashboard from './components/dashboard';
+import Profile from './components/profile/profile';
 
 class App extends Component {
 
@@ -14,8 +14,8 @@ class App extends Component {
           <Switch>
             <Route path='/' exact component={Home} />
             <Route path='/login' component={Login} />
-            <Route path='/register' component={Register} />
             <Route path='/dashboard' component={Dashboard} />
+            <Route path='/profile' component={Profile} />
             <Route render={() => <h3>No Match</h3>} />
           </Switch>
       </BrowserRouter>
